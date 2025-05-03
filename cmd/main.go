@@ -4,9 +4,9 @@ import (
 	"log"
 	nethttp "net/http"
 
+	"github.com/Zaharazov/AdvancedArchitectureTemplate/internal/config"
+	"github.com/Zaharazov/AdvancedArchitectureTemplate/internal/infrastructure/db"
 	"github.com/Zaharazov/AdvancedArchitectureTemplate/internal/transport/http"
-	"github.com/Zaharazov/AdvancedArchitectureTemplate/pkg/config"
-	"github.com/Zaharazov/AdvancedArchitectureTemplate/pkg/db"
 
 	"github.com/joho/godotenv"
 )

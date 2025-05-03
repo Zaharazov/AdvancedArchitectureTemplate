@@ -6,7 +6,7 @@ import (
 	"strconv"
 
 	"github.com/Zaharazov/AdvancedArchitectureTemplate/internal/domain/model"
-	"github.com/Zaharazov/AdvancedArchitectureTemplate/internal/domain/service"
+	"github.com/Zaharazov/AdvancedArchitectureTemplate/internal/service"
 
 	"github.com/gorilla/mux"
 )

@@ -3,8 +3,8 @@ package http
 import (
 	"database/sql"
 
-	"github.com/Zaharazov/AdvancedArchitectureTemplate/internal/domain/service"
 	"github.com/Zaharazov/AdvancedArchitectureTemplate/internal/repository/postgres"
+	"github.com/Zaharazov/AdvancedArchitectureTemplate/internal/service"
 	"github.com/Zaharazov/AdvancedArchitectureTemplate/internal/transport/http/handler"
 
 	"github.com/gorilla/mux"

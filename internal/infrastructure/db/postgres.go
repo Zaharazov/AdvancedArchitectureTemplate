@@ -3,8 +3,7 @@ package db
 import (
 	"database/sql"
 
-	"github.com/Zaharazov/AdvancedArchitectureTemplate/pkg/config"
-
+	"github.com/Zaharazov/AdvancedArchitectureTemplate/internal/config"
 	_ "github.com/lib/pq"
 )
 
