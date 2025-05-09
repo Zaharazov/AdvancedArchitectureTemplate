@@ -1,22 +1,21 @@
 package service
 
 import (
-	"github.com/Zaharazov/AdvancedArchitectureTemplate/internal/domain/model"
-	"github.com/Zaharazov/AdvancedArchitectureTemplate/internal/repository"
+	domain "github.com/Zaharazov/AdvancedArchitectureTemplate/internal/domain/user"
 )
 
 type UserService struct {
-	Repo repository.UserRepository
+	Repo domain.UserRepository
 }
 
-func NewUserService(repo repository.UserRepository) *UserService {
+func NewUserService(repo domain.UserRepository) *UserService {
 	return &UserService{Repo: repo}
 }
 
-func (s *UserService) CreateUser(user *model.User) error {
+func (s *UserService) CreateUser(user *domain.User) error {
 	return s.Repo.Create(user)
 }
 
-func (s *UserService) GetUserByID(id int64) (*model.User, error) {
+func (s *UserService) GetUserByID(id int64) (*domain.User, error) {
 	return s.Repo.GetByID(id)
 }
