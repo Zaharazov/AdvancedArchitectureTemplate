@@ -13,7 +13,7 @@ import (
 
 func main() {
 	if err := godotenv.Load(); err != nil {
-		log.Println(".env файл не найден")
+		log.Println("Файл .env не найден")
 	}
 
 	cfg := config.LoadDBConfig()

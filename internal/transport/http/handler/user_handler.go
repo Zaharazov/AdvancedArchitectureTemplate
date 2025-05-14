@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strconv"
 
-	domain "github.com/Zaharazov/AdvancedArchitectureTemplate/internal/domain/user"
+	"github.com/Zaharazov/AdvancedArchitectureTemplate/internal/domain/user"
 	"github.com/Zaharazov/AdvancedArchitectureTemplate/internal/service"
 
 	"github.com/gorilla/mux"
@@ -20,7 +20,7 @@ func NewUserHandler(service *service.UserService) *UserHandler {
 }
 
 func (h *UserHandler) CreateUser(w http.ResponseWriter, r *http.Request) {
-	var user domain.User
+	var user user.User
 	if err := json.NewDecoder(r.Body).Decode(&user); err != nil {
 		http.Error(w, "Неверный формат запроса", http.StatusBadRequest)
 		return
